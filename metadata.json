@@ -1,0 +1,6 @@
+{
+  "name": "Bike4Mind OpenAI Shim",
+  "description": "OpenAI-compatible local shim service for the bike4mind completions API supporting streaming, non-streaming, and model listing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

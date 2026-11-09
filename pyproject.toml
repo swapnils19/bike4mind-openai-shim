@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "bike4mind-openai-shim"
+version = "0.1.0"
+description = "OpenAI-compatible local shim service for the bike4mind completions API supporting streaming, non-streaming, and model listing."
+authors = ["Developer <shendesc@outlook.com>"]
+readme = "README.md"
+packages = [{ include = "shim" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = ">=0.110.0"
+uvicorn = { version = ">=0.28.0", extras = ["standard"] }
+httpx = ">=0.27.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=8.0.0"
+pytest-asyncio = ">=0.23.0"
+respx = ">=0.21.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0"]
+build-backend = "poetry.core.masonry.api"
